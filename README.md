@@ -1,8 +1,8 @@
 <a href="https://www.microchip.com" rel="nofollow"><img src="images/microchip.png" alt="MCHP" width="300"/></a>
 
-# Analog-to-Digital Converter with Computation and Context (ADCCC) — ADCCC Triggered by APM Using PIC18F56Q71 Microcontroller with MCC Melody
+# Analog-to-Digital Converter with Computation (ADCC) and Context Switching — ADCC with Context Switching Triggered by APM Using PIC18F56Q71 Microcontroller with MCC Melody
 
-This code example demonstrates how to perform a conversion using the Analog-to-Digital Converter with Computation and Context (ADCCC) triggered by the Analog Peripheral Manager (APM). By triggering the ADCCC with the help of APM, the ADCCC peripheral is turned on only when a conversion needs to be performed and the power efficiency increases. The analog input channel routed to the ADCCC is the voltage from a POT 3 Click Board and for visualization purposes a OLED C CLick board is used. The conversion result is displayed on a bar meter interface on the OLED display along with the APM status.
+This code example demonstrates how to perform a conversion using the Analog-to-Digital Converter with Computation (ADCC) and Context Switching triggered by the Analog Peripheral Manager (APM). By triggering the ADCC with Context Switching with the help of APM, the ADCC with Context Switching peripheral is turned on only when a conversion needs to be performed and the power efficiency increases. The analog input channel routed to the ADCC with Context Switching is the voltage from a POT 3 CLICK board and for visualization purposes a OLED C CLICK board is used. The conversion result is displayed on a bar meter interface on the OLED display along with the APM status.
 
 ## Related Documentation
 
@@ -20,16 +20,16 @@ More details and code examples on the AVR64DD32 can be found at the following li
 
 ## Hardware Used
 
-- The PIC18F56Q71 Curiosity Nano Development Board is used as a test platform:
+- The PIC18F56Q71 Curiosity Nano Development board is used as a test platform:
   <br><img src="images/pic18f56q71-curiosity-nano-board.png">
 
 - Curiosity Nano Adapter:
   <br><img src="images/Curiosity-Nano-Adapter.jpg" height="400">
 
-- OLED C CLICK Board (mikroBUS socket 1):
+- OLED C CLICK board (mikroBUS socket 1):
   <br><img src="images/oled-c-click-board.jpg" height="400">
 
-- POT 3 CLICK Board (mikroBUS socket 3):
+- POT 3 CLICK board (mikroBUS socket 3):
   <br><img src="images/pot-3-click-board.jpg" height="400">
 
 <br>
@@ -43,17 +43,17 @@ To program the Curiosity Nano board with this MPLAB® X project, follow the step
 The following configurations must be made for this project:
 
 - System clock: 64 MHz
-- Watch-Dog Timer: disabled
-- ADCCC:
-  - Input Configuration: Single-Ended Mode
+- Watchdog Timer: disabled
+- ADCC with Context Switching:
+  - Input Configuration: Single-Ended mode
   - Auto-conversion Trigger Source: Analog Peripheral Module
   - Result Format: Right justified
-  - VDD: 3.3 V
+  - V<sub>DD</sub>: 3.3 V
   - Clock Selection: ADCRC
   - Enable Context 1:
     - Positive Channel Selection: ANA4
-    - Positive Voltage Reference: VDD
-    - Operating Mode Selection: Basic Mode
+    - Positive Voltage Reference: V<sub>DD</sub>
+    - Operating Mode Selection: Basic mode
 - APM:
   - Clock Source: LFINTOSC
   - Requested Period: 2 sec
@@ -82,7 +82,7 @@ The following configurations must be made for this project:
 | RC5 | Digital input  |
 | RC6 | Digital output |
 
-**Note:** The OLED Click driver requires the involved pins to have certain labels according to the table below:
+**Note:** The OLED CLICK driver requires the involved pins to have certain labels according to the table below:
 
 | Pin |   Label   |
 | :-: | :-------: |
@@ -97,16 +97,16 @@ The following configurations must be made for this project:
 
 ## Demo
 
-The OLED C Click Board is used to visualize the APM Status and the ADCCC conversion result in a graphical format.
+The OLED C CLICK board is used to visualize the APM Status and the ADCC with Context Switching conversion result in a graphical format.
 
 <br><img src="images/demo.gif">
 
 ## Summary
 
-This code example shows how to configure the ADCCC to be triggered by the APM. It uses the Microchip Code Configurator and presents the conversion result using the OLED C Click Board.
+This code example shows how to configure the ADCC with Context Switching to be triggered by the APM. It uses the MPLAB® Code Configurator and presents the conversion result using the OLED C CLICK board.
 
 <br><br>
-[Back to Top](#analog-to-digital-converter-with-computation-and-context-adccc-–-adccc-triggered-by-apm-using-pic18f56q71-microcontroller-with-mcc-melody)
+[Back to Top](#analog-to-digital-converter-with-computation-adcc-and-context-switching--adcc-with-context-switching-triggered-by-apm-using-pic18f56q71-microcontroller-with-mcc-melody)
 <br>
 
 ## How to Program the Curiosity Nano Board
@@ -140,4 +140,4 @@ This chapter demonstrates how to use the MPLAB® X IDE to program a PIC® device
 - [Back to Setup](#setup)
 - [Back to Demo](#demo)
 - [Back to Summary](#summary)
-- [Back to Top](#analog-to-digital-converter-with-computation-and-context-adccc-–-adccc-triggered-by-apm-using-pic18f56q71-microcontroller-with-mcc-melody)
+- [Back to Top](#analog-to-digital-converter-with-computation-adcc-and-context-switching--adcc-with-context-switching-triggered-by-apm-using-pic18f56q71-microcontroller-with-mcc-melody)
