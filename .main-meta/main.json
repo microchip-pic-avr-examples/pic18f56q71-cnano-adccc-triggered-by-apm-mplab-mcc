@@ -39,7 +39,6 @@
         "author": "Alexandru - Ioan - Cristian Sabiuta",
         "peripherals": [
             "ADCCC",
-            "APM",
             "SPI"
         ],
         "keywords": [
