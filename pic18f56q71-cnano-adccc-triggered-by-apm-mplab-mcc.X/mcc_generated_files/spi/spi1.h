@@ -5,13 +5,13 @@
  *
  * @defgroup spi1 SPI1
  *
- * @brief This header file provides APIs for the SPI1 driver.
+ * @brief Contains the API Prototypes for the SPI1 driver.
  *
  * @version SPI1 Driver Version 2.0.1
 */
 
 /*
-© [2022] Microchip Technology Inc. and its subsidiaries.
+© [2023] Microchip Technology Inc. and its subsidiaries.
 
     Subject to your compliance with these terms, you may use Microchip 
     software and any derivatives exclusively with Microchip products. 
@@ -46,7 +46,7 @@
 /**
  * @ingroup spi1
  * @typedef enum spi1_modes_t
- * @brief Enumeration of the different configurations supported by the driver.A configuration is specified as parameter to SPI1_Open()
+ * @brief Enumeration of the different configurations supported by the driver. A configuration is specified as parameter to SPI1_Open()
  *        and is used by the function to set SPI parameters as specified by the configuration.
  */
 typedef enum 
@@ -58,77 +58,77 @@ extern const struct SPI_INTERFACE SPI1;
 
 /**
  * @ingroup spi1
- * @brief Initialize SPI interface.
- * @param none
- * @return none
+ * @brief Initializes the SPI module.
+ * @param None.
+ * @return None.
  */
 void SPI1_Initialize(void);
 
 /**
  * @ingroup spi1
  * @brief Sets the index of Configuration to use in the transfer.
- * @param uint8_t spiConfigIndex - The configuration index
- * @retval true  - SPI status was Open.
- * @retval false - SPI status was not Open.
+ * @param uint8_t spiConfigIndex - Configuration index. See SPI1_configuration_name_t for configuration list.
+ * @retval True  - SPI is open.
+ * @retval False - SPI is not open.
  */
 bool SPI1_Open(uint8_t spiConfigIndex);
 
 /**
  * @ingroup spi1
- * @brief Close the SPI for communication.
- * @param none
- * @return none
+ * @brief Closes the SPI for communication.
+ * @param None.
+ * @return None.
  */
 void SPI1_Close(void);
 
 /**
  * @ingroup spi1
- * @brief Exchange one byte over SPI. Blocks until done.
- * @param uint8_t byteData - The byte to transfer
+ * @brief Exchanges one byte over SPI. Blocks until done.
+ * @param uint8_t byteData - The byte to transfer.
  * @return uint8_t - Received data byte.
  */
 uint8_t SPI1_ByteExchange(uint8_t byteData);
 
 /**
  * @ingroup spi1
- * @brief Exchange a buffer over SPI. Blocks if using polled driver.
- * @param[inout] void * bufferData The buffer to transfer. Received data is returned here
- * @param[in] size_t bufferSize The size of buffer to transfer
- * @return none
+ * @brief Exchanges a buffer over SPI. Blocks if using polled driver.
+ * @param[inout] void * bufferData The buffer to transfer. Received data is returned here.
+ * @param[in] size_t bufferSize The size of buffer to transfer.
+ * @return None.
  */
 void SPI1_BufferExchange(void * bufferData, size_t bufferSize);
 
 /**
  * @ingroup spi1
- * @brief Write a buffer over SPI. Blocks if using polled driver.
- * @param[in] void * bufferData The buffer to transfer
- * @param[in] size_t bufferSize The size of buffer to transfer
- * @return none
+ * @brief Writes a buffer over SPI. Blocks if using polled driver.
+ * @param[in] void * bufferData The buffer to transfer.
+ * @param[in] size_t bufferSize The size of buffer to transfer.
+ * @return None.
  */
 void SPI1_BufferWrite(void * bufferData, size_t bufferSize);
 
 /**
  * @ingroup spi1
- * @brief Read a buffer over SPI. Blocks if using polled driver.
+ * @brief Reads a buffer over SPI. Blocks if using polled driver.
  * @param[out] void * bufferData Received data is written here.
- * @param[in] size_t bufferSize The size of buffer to transfer
- * @return none
+ * @param[in] size_t bufferSize The size of buffer to transfer.
+ * @return None.
  */
 void SPI1_BufferRead(void * bufferData, size_t bufferSize);
 
 /**
  * @ingroup spi1
- * @brief Write data byte to SPI.
+ * @brief Writes a data byte to SPI.
  * @param uint8_t byteData The byte to transfer.
- * @return none
+ * @return None.
  */
 void SPI1_ByteWrite(uint8_t byteData);
 
 /**
  * @ingroup spi1
- * @brief Get received data byte from SPI.
- * @param none
- * @return uint8_t - The received data
+ * @brief Gets the received data byte from SPI.
+ * @param None.
+ * @return uint8_t - The received data byte.
  */
 uint8_t SPI1_ByteRead(void);
 

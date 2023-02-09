@@ -5,13 +5,13 @@
   *
   * @ingroup spi1
   *
-  * @brief This file contains the driver code for SPI1 module.
+  * @brief Contains the API Implementations for SPI1 module driver.
   *
   * @version SPI1 Driver Version 2.0.1
 */
 
 /*
-© [2022] Microchip Technology Inc. and its subsidiaries.
+© [2023] Microchip Technology Inc. and its subsidiaries.
 
     Subject to your compliance with these terms, you may use Microchip 
     software and any derivatives exclusively with Microchip products. 
@@ -35,7 +35,7 @@
 #include <xc.h>
 
 /**
- * @ingroup SPI1_DRIVER_FUNCTION
+ * @ingroup spi1
  * @struct SPI_INTERFACE SPI1
  * @brief Defines an object for SPI_DRIVER_FUNCTIONS.
  */ 
