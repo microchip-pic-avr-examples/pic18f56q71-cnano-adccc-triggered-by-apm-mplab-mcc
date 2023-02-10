@@ -16,7 +16,7 @@ More details and code examples on the AVR64DD32 can be found at the following li
 - [MPLAB® X IDE](http://www.microchip.com/mplab/mplab-x-ide) v6.05 or newer
 - [MPLAB® X IPE](https://www.microchip.com/en-us/tools-resources/production/mplab-integrated-programming-environment) v6.05 or newer
 - [MPLAB® XC8](http://www.microchip.com/mplab/compilers) v2.40 or newer
-- [PIC18F-Q Series Device Pack](https://packs.download.microchip.com/) v1.15.243 or newer
+- [PIC18F-Q Series Device Pack](https://packs.download.microchip.com/) v1.15.360 or newer
 
 ## Hardware Used
 
