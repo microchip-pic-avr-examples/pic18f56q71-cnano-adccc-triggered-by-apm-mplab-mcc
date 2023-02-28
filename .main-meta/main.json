@@ -10,7 +10,7 @@
         "shortDescription": "Analog-to-Digital Converter with Computation (ADCC) and Context Switching — ADCC with Context Switching Triggered by APM Using PIC18F56Q71 Microcontroller with MCC Melody",
         "ide": {
             "name": "MPLAB X",
-            "semverRange": ">=6.0.0"
+            "semverRange": ">=6.5.0"
         },
         "compiler": [
             {
@@ -20,11 +20,11 @@
         ],
         "dfp": {
             "name": "PIC18F-Q_DFP",
-            "semverRange": "^1.15.242"
+            "semverRange": "^1.16.368"
         },
         "configurator": {
             "name": "MCC",
-            "semverRange": ">=5.1.13"
+            "semverRange": ">=5.2.2"
         },
         "device": {
             "metaDataVersion": "1.0.0",
