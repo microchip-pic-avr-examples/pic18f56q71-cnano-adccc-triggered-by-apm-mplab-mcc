@@ -140,9 +140,6 @@ void PIN_MANAGER_Initialize(void)
     IOCEP = 0x0;
     IOCEN = 0x0;
     IOCEF = 0x0;
-    IOCFP = 0x0;
-    IOCFN = 0x0;
-    IOCFF = 0x0;
 
 
 }

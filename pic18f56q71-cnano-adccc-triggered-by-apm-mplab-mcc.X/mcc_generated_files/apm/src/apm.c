@@ -5,9 +5,9 @@
  * 
  * @ingroup apm
  * 
- * @brief This is the generated driver implementation file for the APM driver using PIC18 MCUs
+ * @brief This file contains the API implementations for the  APM module.
  *
- * @version APM Driver Version 1.0.0
+ * @version APM Driver Version 1.0.1
 */
 /*
 © [2023] Microchip Technology Inc. and its subsidiaries.
@@ -114,6 +114,12 @@ void APM_Initialize(void)
 
     //ZCD disabled; CMP2 disabled; CMP1 disabled; DAC3 disabled; DAC2 disabled; DAC1 disabled; OPA2 disabled; OPA1 disabled; 
     APMPERE2H = 0x0;
+
+    //TEMP disabled; ADCA disabled; ADCD enabled; FVR2 disabled; FVR1 disabled; BG disabled; 
+    APMSTATUSL = 0x20;
+
+    //ZCD disabled; CMP2 disabled; CMP1 disabled; DAC3 disabled; DAC2 disabled; DAC1 disabled; OPA2 disabled; OPA1 disabled; 
+    APMSTATUSH = 0x0;
 
     //Start the APM by setting the EN bit
     APMCONbits.EN = 1;

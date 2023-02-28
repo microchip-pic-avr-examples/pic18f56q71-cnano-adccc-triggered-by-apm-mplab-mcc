@@ -96,7 +96,7 @@
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="PIC18F-Q_DFP" vendor="Microchip" version="1.15.360"/>
+        <pack name="PIC18F-Q_DFP" vendor="Microchip" version="1.16.368"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
@@ -328,13 +328,13 @@
         <targetDevice>PIC18F56Q71</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>noID</platformTool>
+        <platformTool>nEdbgTool</platformTool>
         <languageToolchain>XC8</languageToolchain>
         <languageToolchainVersion>2.40</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="PIC18F-Q_DFP" vendor="Microchip" version="1.15.360"/>
+        <pack name="PIC18F-Q_DFP" vendor="Microchip" version="1.16.368"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
